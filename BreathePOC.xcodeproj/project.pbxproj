@@ -56,8 +56,7 @@
 		2FDA2AD62566D4C0000EE0F7 /* BreathePOC */ = {
 			isa = PBXGroup;
 			children = (
-				2FDA2AD72566D4C0000EE0F7 /* AppDelegate.swift */,
-				2FDA2AD92566D4C0000EE0F7 /* SceneDelegate.swift */,
+				2FDA2AEE2566D956000EE0F7 /* iOS */,
 				2FDA2ADB2566D4C0000EE0F7 /* ViewController.swift */,
 				2FDA2ADD2566D4C0000EE0F7 /* Main.storyboard */,
 				2FDA2AE02566D4C3000EE0F7 /* Assets.xcassets */,
@@ -65,6 +64,15 @@
 				2FDA2AE52566D4C3000EE0F7 /* Info.plist */,
 			);
 			path = BreathePOC;
+			sourceTree = "<group>";
+		};
+		2FDA2AEE2566D956000EE0F7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2FDA2AD72566D4C0000EE0F7 /* AppDelegate.swift */,
+				2FDA2AD92566D4C0000EE0F7 /* SceneDelegate.swift */,
+			);
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = BreathePOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NZC6LC8NWM;
 				INFOPLIST_FILE = BreathePOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
