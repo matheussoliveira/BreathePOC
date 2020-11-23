@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB9CFB8256C299F00D7A7C7 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9CFB7256C299F00D7A7C7 /* ConfigTableViewController.swift */; };
 		2FDA2AD82566D4C0000EE0F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2AD72566D4C0000EE0F7 /* AppDelegate.swift */; };
 		2FDA2ADA2566D4C0000EE0F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2AD92566D4C0000EE0F7 /* SceneDelegate.swift */; };
 		2FDA2ADC2566D4C0000EE0F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDA2ADB2566D4C0000EE0F7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FB9CFB7256C299F00D7A7C7 /* ConfigTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewController.swift; sourceTree = "<group>"; };
 		2FDA2AD42566D4C0000EE0F7 /* BreathePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreathePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDA2AD72566D4C0000EE0F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FDA2AD92566D4C0000EE0F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				2FDA2AEE2566D956000EE0F7 /* iOS */,
 				2FDA2ADB2566D4C0000EE0F7 /* ViewController.swift */,
+				2FB9CFB7256C299F00D7A7C7 /* ConfigTableViewController.swift */,
 				2FDA2ADD2566D4C0000EE0F7 /* Main.storyboard */,
 				2FDA2AE02566D4C3000EE0F7 /* Assets.xcassets */,
 				2FDA2AE22566D4C3000EE0F7 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				2FDA2ADC2566D4C0000EE0F7 /* ViewController.swift in Sources */,
 				2FDA2AD82566D4C0000EE0F7 /* AppDelegate.swift in Sources */,
 				2FDA2ADA2566D4C0000EE0F7 /* SceneDelegate.swift in Sources */,
+				2FB9CFB8256C299F00D7A7C7 /* ConfigTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
