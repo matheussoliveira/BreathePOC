@@ -14,7 +14,6 @@ protocol ConfigDelegate: class {
 class ConfigTableViewController: UITableViewController {
     
     weak var delegate: ConfigDelegate?
-    private var rate: Int = 0
     var currentSelection: Int = 7
 
     override func viewDidLoad() {
@@ -31,17 +30,22 @@ class ConfigTableViewController: UITableViewController {
         return 7
     }
     
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "rateCell")
+        let rate = indexPath.row + 4
+        cell.textLabel?.text = "\(rate) respirações por minuto"
+        cell.selectionStyle = .none
+        if rate == currentSelection {
+            cell.accessoryType = .checkmark
+        } else {
             cell.accessoryType = .none
         }
+        return cell
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) {
-            cell.accessoryType = .checkmark
-            cell.contentView.backgroundColor = .clear
-            self.rate = cell.tag
-            self.delegate?.setBreatheRate(rate: rate)
-        }
+            self.currentSelection = indexPath.row + 4
+            self.delegate?.setBreatheRate(rate: self.currentSelection)
+            self.tableView.reloadData()
     }
 }
